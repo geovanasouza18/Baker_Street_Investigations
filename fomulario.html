@@ -6,6 +6,45 @@
     <title>Baker Street Investigations</title>
 </head>
 <body>
+
+    <header>
+        <figure>
+            <img src="/img/logo_holmes.jpg" alt="logo Holmes" width="200px" height="200px">
+            <figcaption>Baker Street Investigations</figcaption>
+        </figure>
+    </header>
     
+    <h1>Descreva o Seu Caso</h1>
+    <p>Preencha os campos abaixo para nos contar mais sobre o seu problema. Um de nossos detetives entrará em contato o mais breve possível.</p>
+
+    <form action="#" method="post">
+        <label for="nome">Nome completo:</label><br>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome..." required><br><br>
+
+        <label for="Email">Digite seu email:</label><br>
+        <input type="email" name="email" id="email" placeholder="exemple@gmail.com" required><br><br>
+
+        <label for="whatsapp">Digite seu número do WhatsApp:</label><br>
+        <input type="tel" name="numero" id="whatsapp" placeholder="(XX) XXXX-XXXX" required><br><br>
+
+        <label for="caso">Tipo de Caso:</label><br>
+        <select name="caso" id="caso" required>
+            <option value="" selected disabled>Selecione o tipo de caso...</option>
+            <option value="infidelidade">Infidelidade conjugal.</option>
+            <option value="localizacao">Localização de pessoas.</option>
+            <option value="investigacao">Investigação empresarial.</option>
+            <option value="fraude">Fraude financeira.</option>
+            <option value="crime">Assassinato</option>
+            <option value="outros">Outros (campo aberto para especificar).</option>
+        </select><br><br>
+
+        <label for="descricao">Descrição do Caso:</label><br>
+        <textarea name="descricao" id="descricao" required placeholder="Por favor, inclua o máximo de detalhes que puder, como datas, locais e informações importantes." cols="65" rows="10"></textarea><br><br>
+
+        <input type="checkbox" name="confirmacao" id="confirmacao" required>
+        <label for="confirmacao">Declaro que as informações fornecidas são verdadeiras e autorizo o uso destas para análise do caso</label><br><br>
+       
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
