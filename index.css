@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-primary:#515E66;
+    --color-black:#0a0a0a;
+    --color-white:#f4f4f4;
+    --color-secondery: #8a7304;
+}
+
+::selection{
+    background-color: var(--color-secondery);
+    color: var(--color-white);
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+h1{
+    font-family: "Cinzel", serif;
+    font-weight: 800;
+}
+
+p, ul{
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+header{
+    background-color: var(--color-black);
+    padding: 2rem;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+nav li{
+    display: inline;
+    margin: 0 2rem;
+}
+
+nav a {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+nav a:hover{
+    color: var(--color-secondery);
+}
+
+.hero{
+    overflow: hidden;
+    background-image:linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+        ),url(/img/holmes.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 8.5rem;
+    width: 100%;
+    min-height: 70vh;
+    text-align: center;
+}
+
+.hero_title{
+    margin-top: 3REM;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--color-white);
+    
+}
+
+.hero_text{
+    font-weight: 400;
+    color: var(--color-white);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.hero_cta{
+    background-color: var(--color-secondery);
+    color: var(--color-white);
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: .8rem;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
+section > h2{
+    padding: 0 2rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#about{
+    margin-top: 4rem;
+}
+
+.title_about{
+    max-width: 950px;
+    margin: 0 5rem;
+    margin-bottom: 2rem;
+}
+.text_about{
+    max-width: 950px;
+    margin: 0 5rem;
+}
